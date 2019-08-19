@@ -20,6 +20,7 @@ from sqlalchemy import create_engine, func
 import pickle
 
 app = Flask(__name__)
+
 app.config['UPLOAD_FOLDER'] = 'food_test/test_images'
 
 logit_model = pickle.load(open('./model/logit_model.pkl', 'rb'))
