@@ -18,7 +18,6 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 import pickle
-import numpy as np
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'food_test/test_images'
