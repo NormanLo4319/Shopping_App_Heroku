@@ -37,9 +37,7 @@ def load_model():
     model = Xception(weights="imagenet")
     graph = K.get_session().graph
 
-
 load_model()
-
 
 def prepare_image(img):
     img = img_to_array(img)
