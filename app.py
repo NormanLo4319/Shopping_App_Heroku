@@ -186,9 +186,12 @@ def recipes():
        recps = session.query(Recipe).filter(Recipe.name == result).all()
        ingres = session.query(Ingredient).filter(Ingredient.recipes == result).all()
        total = session.query(func.sum(Ingredient.cost)).filter(Ingredient.recipes == result).all()
-       print(ingres)
+       for total in total:
+            print(list(total))
+            cost = [round(list(total)[0], 2)]
+            print(cost)
        
-       return render_template("recipe.html", recps=recps, ingres=ingres, total=total, title="Recipe")
+       return render_template("recipe.html", recps=recps, ingres=ingres, total=cost, title="Recipe")
 
    return render_template("broccoli_low.html")
 

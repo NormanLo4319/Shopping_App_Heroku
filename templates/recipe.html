@@ -12,7 +12,7 @@
         <div class="card" style="width: 21rem;">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <h6>Cost</h5>
                         {% for total in total %}
                         <p>{{ total }}</p>
@@ -21,9 +21,9 @@
                     <div class="col-sm-4">
                         <h6>Time</h5>
                         {% for recp in recps %}
-                        <p>{{ recp.time }}</p>
+                        <p>{{ recp.time }} minutes</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <h6>Calories</h5>
                         <p>{{ recp.calories }}</p>
                     </div>
