@@ -31,7 +31,7 @@ spyder==3.3.2
 spyder-kernels==0.3.0
 SQLAlchemy==1.2.15
 tensorboard==1.14.0
-tensorflow==2.5.1
+tensorflow==2.5.3
 tensorflow-estimator==1.14.0
 traitlets==4.3.2
 wcwidth==0.1.7
